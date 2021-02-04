@@ -1,8 +1,7 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <time.h>
-
-/* main - entry point
+ /** main - entry point
  *
  *
  * Return: always 0 (Success)
