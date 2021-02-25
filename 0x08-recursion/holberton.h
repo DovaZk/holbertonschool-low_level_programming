@@ -14,6 +14,6 @@ int primo(int n, int x);
 int is_palindrome(char *s);
 int comparacion(int der, int rev, char *s);
 int longi(char *s);
-int wildcmp(char *s1, char *s2)
+int wildcmp(char *s1, char *s2);
 
 #endif
