@@ -1,7 +1,10 @@
-#ifndef LISTS_H
-#define LISTS_H
+#ifndef __FILE_H_
+#define __FILE_H_
 #include <stdio.h>
 #include <stdlib.h>
+#include <unistd.h>
+#include <string.h>
+
 /**
  * struct list_s - singly linked list
  * @str: string - (malloc'ed string)
