@@ -9,17 +9,17 @@
  */
 list_t *add_node_end(list_t **head, const char *str)
 {
-	unsigned int a;
+	unsigned int i;
 	list_t *new_node;
 	list_t *last_node;
 
-	for (a = 0; str[a] != '\0'; a++)
+	for (i = 0; str[i] != '\0'; i++)
 		continue;
 	new_node = malloc(sizeof(list_t));
 	if (new_node == NULL)
 		return (NULL);
 	new_node->str = strdup(str);
-	new_node->len = a;
+	new_node->len = i;
 	new_node->next = NULL;
 	last_node = *head;
 	if (*head == NULL)
