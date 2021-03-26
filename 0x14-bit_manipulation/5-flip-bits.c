@@ -12,10 +12,8 @@ unsigned int flip_bits(unsigned long int n, unsigned long int m)
 
 	if (n == 0 && m == 0)
 		return (0);
-	/**count the number of differences*/
+
 	num_dif = n ^ m;
-	/** determine number of changes*/
-	/**while num_dif have value*/
 	while (num_dif)
 	{
 		num_bits += num_dif & 1;
