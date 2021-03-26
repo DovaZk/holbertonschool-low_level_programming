@@ -1,23 +1,25 @@
 #include "holberton.h"
 
 /**
- * flip_bits - function that returns the number of bits you would need
- * to flip to get from one number to another
- * @n: numbers
- * @m: index
- *
- * Return: number of bits
+ * flip_bits - determine the number bits to flip
+ * @n: first int value
+ * @m: value to convert to
+ * Return: number of bits to flip to change from one number to another
  */
 unsigned int flip_bits(unsigned long int n, unsigned long int m)
 {
-	unsigned int bit = tmp;
+	unsigned int num_dif, num_bits = 0;
 
-	xor = n ^ m;
-	while (tmp != 0)
+	if (n == 0 && m == 0)
+		return (0);
+	/**count the number of differences*/
+	num_dif = n ^ m;
+	/** determine number of changes*/
+	/**while num_dif have value*/
+	while (num_dif)
 	{
-		if (tmp & 1)
-			bit++;
-		tmp >>= 1;
+		num_bits += num_dif & 1;
+		num_dif >>= 1;
 	}
-	return ();
+	return (num_bits);
 }
